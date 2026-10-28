@@ -1,0 +1,22 @@
+=== KEŞİFSEL VERİ ANALİZİ (EDA) ÖZETİ ===
+Toplam Benzersiz Örnek Sayısı : 19431
+Toplam Kelime Haznesi (Vocab) : 58426 benzersiz kelime
+Ortalama Soru Uzunluğu        : 8.69 kelime (Min: 1, Maks: 1693)
+Ortalama Cevap Uzunluğu       : 29.01 kelime (Min: 0, Maks: 553)
+
+Sorularda En Sık Geçen 15 Kelime:
+  - hangi: 4233
+  - ne: 2957
+  - ve: 2265
+  - nedir: 2047
+  - bir: 1815
+  - nasıl: 1586
+  - için: 1197
+  - kaç: 1154
+  - kim: 1075
+  - nin: 1061
+  - en: 1061
+  - zaman: 1030
+  - ile: 1010
+  - osmanlı: 988
+  - in: 865

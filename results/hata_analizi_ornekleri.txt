@@ -1,0 +1,90 @@
+=== ZORUNLU HATA ANALİZİ (ERROR ANALYSIS): 5 DOĞRU VE 5 HATALI ÖRNEK ===
+
+------------------------------------------------------------------------
+BÖLÜM A: BAŞARILI / DOĞRU YANITLANAN 5 ÖRNEK
+------------------------------------------------------------------------
+
+[Doğru Örnek #1]
+- Test Sorusu            : Sadrazam Ahmet Paşa'nın teşviki ile padişahın kadınlara ve güreş eğlencelerine meyletmesi, rüşvetin genel olarak yaygınlaşması, halkın perişan olması, samur kürk merakının büyük tepkilere yol açması sonucu kimin indirilmesi için harekete geçilmesine neden oldu?
+- Eşleşen Eğitim Sorusu  : Sadrazam Ahmet Paşa'nın teşviki ile kimin kadınlara ve güreş eğlencelerine meyletmesi, rüşvetin genel olarak yaygınlaşması, halkın perişan olması, samur kürk merakının büyük tepkilere yol açması sonucu padişahın indirilmesi için harekete geçilmesine neden oldu?
+- Kosinüs Benzerliği     : %95.07 | ROUGE-1: %100.00
+- Gerçek Cevap (Özet)    : padişahın...
+- Modelin Cevabı (Özet)  : padişahın...
+
+[Doğru Örnek #2]
+- Test Sorusu            : Lehistan'ın antlaşma şartlarına uymaması yüzünden ertesi yıl yeniden sefere çıkıldı ve savaş kaç yılında son buldu?
+- Eşleşen Eğitim Sorusu  : Lehistan'ın antlaşma şartlarına uymaması yüzünden ertesi yıl yeniden sefere çıkıldı ve savaş ne zaman son buldu?
+- Kosinüs Benzerliği     : %93.07 | ROUGE-1: %100.00
+- Gerçek Cevap (Özet)    : 1676...
+- Modelin Cevabı (Özet)  : 1676...
+
+[Doğru Örnek #3]
+- Test Sorusu            : Kim 30 Aralık 1673 tarihinde Dobriç'te doğmuştur?
+- Eşleşen Eğitim Sorusu  : Kim 30 Aralık 1673 tarihinde doğmuştur?
+- Kosinüs Benzerliği     : %91.78 | ROUGE-1: %100.00
+- Gerçek Cevap (Özet)    : III. Ahmed,...
+- Modelin Cevabı (Özet)  : III. Ahmed,...
+
+[Doğru Örnek #4]
+- Test Sorusu            : Nazım hikmet kimdir
+- Eşleşen Eğitim Sorusu  : Nazım hikmet kim
+- Kosinüs Benzerliği     : %90.15 | ROUGE-1: %100.00
+- Gerçek Cevap (Özet)    : Nazım Hikmet, Türk edebiyatının en önemli şairlerinden biridir. Serbest şiir anlayışıyla tanınır....
+- Modelin Cevabı (Özet)  : Nazım Hikmet, Türk edebiyatının en önemli şairlerinden biridir. Serbest şiir anlayışıyla tanınır....
+
+[Doğru Örnek #5]
+- Test Sorusu            : namaz pusulası hangi yılda imal edilmiştir?
+- Eşleşen Eğitim Sorusu  : Namaz pusulası ne zaman imal edilmiştir?
+- Kosinüs Benzerliği     : %88.72 | ROUGE-1: %100.00
+- Gerçek Cevap (Özet)    : 1251/1853...
+- Modelin Cevabı (Özet)  : 1251/1853...
+
+
+------------------------------------------------------------------------
+BÖLÜM B: HATALI / Yetersiz YANITLANAN 5 ÖRNEK VE HATA NEDENLERİ
+------------------------------------------------------------------------
+
+[Hatalı Örnek #1]
+- Test Sorusu            : Üniversiteleri akademik başarıları bakımından değerlendiren ve sıralayan kurum nedir?
+- Eşleşen Eğitim Sorusu  : Akdeniz Üniversitesi'nin Türkiye'deki devlet üniversiteleri arasındaki sıralaması nedir?
+- Kosinüs Benzerliği     : %20.78 | ROUGE-1: %0.00
+- Gerçek Cevap (Özet)    : URAP...
+- Modelin Cevabı (Özet)  : 7...
+- Hata Analizi Yorumu    : TF-IDF modeli anlamsal (semantik) bağlamı bilmediği için sadece yüzeysel kelime/ek eşleşmesine bakarak farklı bağlamdaki bir sorunun cevabını getirmiştir.
+
+[Hatalı Örnek #2]
+- Test Sorusu            : Bütün Bulgaristan, Kuzey Yunanistan, Makedonya, Sırbistan bölgeleri ile Edirne kimlerin elindeydi ?
+- Eşleşen Eğitim Sorusu  : Buna rağmen ne zaman imzalanan Londra Antlaşması ile Edirne Bulgaristan'a bırakıldı ?
+- Kosinüs Benzerliği     : %21.13 | ROUGE-1: %0.00
+- Gerçek Cevap (Özet)    : Rusya ve müttefiklerinin...
+- Modelin Cevabı (Özet)  : 30 Mayıs'ta...
+- Hata Analizi Yorumu    : TF-IDF modeli anlamsal (semantik) bağlamı bilmediği için sadece yüzeysel kelime/ek eşleşmesine bakarak farklı bağlamdaki bir sorunun cevabını getirmiştir.
+
+[Hatalı Örnek #3]
+- Test Sorusu            : Ancak ülkenin içinde bulunduğu işgal koşullarından ötürü Anayasa'nın emrettiği yeni seçim ne kadar süreyle yapılamadı ?
+- Eşleşen Eğitim Sorusu  : Evcil hayvanların ne kadar süreyle yalnız bırakılmamasına ihtiyaç duyuyor?
+- Kosinüs Benzerliği     : %22.64 | ROUGE-1: %0.00
+- Gerçek Cevap (Özet)    : yaklaşık bir yıl süreyle...
+- Modelin Cevabı (Özet)  : Evcil hayvanların yalnız bırakılmamaya ihtiyaç duydukları süre, hayvanın türüne, yaşı, sağlığı ve önceki deneyimleri gibi faktörlere bağlıdır. Ancak bazı genel kılavuzlar vardır:
+
+- Kedi ve köpek gibi memeliler için:
+ + ...
+- Hata Analizi Yorumu    : TF-IDF modeli anlamsal (semantik) bağlamı bilmediği için sadece yüzeysel kelime/ek eşleşmesine bakarak farklı bağlamdaki bir sorunun cevabını getirmiştir.
+
+[Hatalı Örnek #4]
+- Test Sorusu            : Libros del saber de astronomía'nın italyancaya yapılan bir çeviri olduğunu ortaya koyan makalenin adı nedir?
+- Eşleşen Eğitim Sorusu  : İlgimi çekebilecek bir işin adı nedir?
+- Kosinüs Benzerliği     : %22.68 | ROUGE-1: %0.00
+- Gerçek Cevap (Özet)    : The Compartmented Cylindrical Clepsydra...
+- Modelin Cevabı (Özet)  : İlgini çekebilecek bir iş arayışındaysan, birkaç seçenek düşünmeni öneririm:
+
+1. **Yazılım Geliştiricisi**: Yazılım geliştirme, teknoloji sektörünün hızla gelişen bir alanında yer almaktadır. Bu rolde, farklı platformlar...
+- Hata Analizi Yorumu    : TF-IDF modeli anlamsal (semantik) bağlamı bilmediği için sadece yüzeysel kelime/ek eşleşmesine bakarak farklı bağlamdaki bir sorunun cevabını getirmiştir.
+
+[Hatalı Örnek #5]
+- Test Sorusu            : Atsız, fikir adamlığı yanında daha başka neleri ile de tanınmaktadır ?
+- Eşleşen Eğitim Sorusu  : Kim genellikle bu baskıcı dönemiyle tanınmaktadır ?
+- Kosinüs Benzerliği     : %22.79 | ROUGE-1: %0.00
+- Gerçek Cevap (Özet)    : tarih, edebiyat tarihi araştırmaları, tarihi romanları ve şiirleriyle...
+- Modelin Cevabı (Özet)  : Abdülhamit Han...
+- Hata Analizi Yorumu    : TF-IDF modeli anlamsal (semantik) bağlamı bilmediği için sadece yüzeysel kelime/ek eşleşmesine bakarak farklı bağlamdaki bir sorunun cevabını getirmiştir.

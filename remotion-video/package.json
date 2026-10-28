@@ -1,0 +1,19 @@
+{
+  "name": "turkce-diyalog-remotion-video",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render src/index.ts TanitimVideosu ../results/proje_tanitim_videosu.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.270",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.270"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "typescript": "^5.5.4"
+  }
+}

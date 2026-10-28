@@ -1,0 +1,22 @@
+=== TF-IDF + KOSİNÜS BENZERLİĞİ BASELINE MODEL SONUÇLARI ===
+
+1. Doğrulama (Validation) Seti Metrikleri (%):
+   - BLEU-1                      : %11.14
+   - BLEU-2                      : %7.40
+   - BLEU-4                      : %3.00
+   - ROUGE-1                     : %13.26
+   - ROUGE-2                     : %6.27
+   - ROUGE-L                     : %12.37
+   - Ortalama Kosinüs Benzerliği : %61.24
+
+2. Test Seti Nihai Metrikleri (%):
+   - BLEU-1                      : %11.10
+   - BLEU-2                      : %7.03
+   - BLEU-4                      : %2.32
+   - ROUGE-1                     : %13.36
+   - ROUGE-2                     : %5.84
+   - ROUGE-L                     : %12.48
+   - Ortalama Kosinüs Benzerliği : %61.25
+
+Not: Perplexity (PPL) metriği olasılıksal dil modellerine (Transformer vb.) özgüdür;
+TF-IDF bilgi getirme (retrieval) modeli kelime olasılık dağılımı üretmediği için PPL hesaplanmaz.
